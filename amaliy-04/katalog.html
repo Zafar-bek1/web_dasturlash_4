@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurslar katalogi — Xorazm Bilim Markazi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="top">
+  <div class="topbar">
+    <div class="container topbar-inner caption">
+      <div class="topbar-left">
+        <span class="material-symbols-outlined i-16">campaign</span>
+        <span>Yangi o'quv mavsumi boshlanmoqda! 2025-yil qabuli ochiq.</span>
+      </div>
+      <div class="topbar-right">
+        <span><span class="material-symbols-outlined i-14">location_on</span>Urganch shahri, Al-Xorazmiy ko'chasi</span>
+        <span><span class="material-symbols-outlined i-14">call</span>+998 (62) 224-00-11</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img alt="Xorazm Bilim Markazi logotipi" src="rasmlar/logo.png" width="160" height="160">
+      <span class="brand-text">
+        <span class="brand-name">Xorazm Bilim Markazi</span>
+        <span class="brand-sub">Zamonaviy Ta'lim Markazi</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Asosiy menyu">
+      <ul>
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="batafsil.html">Batafsil</a></li>
+        <li><a href="index.html#courses">Kurslar</a></li>
+        <li><a class="active" aria-current="page" href="katalog.html">Katalog</a></li>
+        <li><a href="index.html#prices">Narxlar</a></li>
+        <li><a href="index.html#admission">Qabul bosqichlari</a></li>
+        <li><a href="aloqa.html">Aloqa</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="fav-counter" title="Sevimli kurslar soni"><span class="material-symbols-outlined i-18">favorite</span><b id="fav-count">0</b></span>
+      <a class="btn btn-amber nav-cta" href="aloqa.html">Qabulga yozilish</a>
+      <div class="avatar"><span class="material-symbols-outlined i-18">person</span></div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobil menyu">
+    <ul>
+      <li><a href="index.html">Bosh sahifa</a></li>
+      <li><a href="batafsil.html">Batafsil</a></li>
+      <li><a href="index.html#courses">Kurslar</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+      <li><a href="index.html#prices">Narxlar</a></li>
+      <li><a href="index.html#admission">Qabul bosqichlari</a></li>
+      <li><a href="aloqa.html">Aloqa</a></li>
+      <li><a href="aloqa.html">Qabulga yozilish</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb label-md" aria-label="Sahifa yo'li">
+        <a href="index.html">Bosh sahifa</a>
+        <span class="material-symbols-outlined i-16">chevron_right</span>
+        <b>Kurslar katalogi</b>
+      </nav>
+      <h1 class="display-hero">Kurslar katalogi</h1>
+      <p class="body-lg">Barcha yo'nalishlar bir joyda: nomi bo'yicha qidiring, yo'nalish tanlang va narx bo'yicha saralang.</p>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="katalog">
+    <div class="container">
+
+      <div class="kat-stats" aria-label="Katalog statistikasi">
+        <div class="card kat-stat"><span class="label-md">Jami kurslar</span><strong id="stat-jami">0</strong></div>
+        <div class="card kat-stat"><span class="label-md">O'rtacha oylik to'lov</span><strong id="stat-ortacha">0</strong></div>
+        <div class="card kat-stat"><span class="label-md">Eng qimmat kurs</span><strong id="stat-qimmat">—</strong></div>
+        <div class="card kat-stat"><span class="label-md">Qabul ochiq kurslar</span><strong id="stat-ochiq">0</strong></div>
+      </div>
+
+      <div class="kat-controls">
+        <div class="field kat-search">
+          <label for="qidiruv">Qidiruv</label>
+          <input id="qidiruv" type="search" placeholder="Kurs nomini yozing..." autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="kategoriya">Yo'nalish</label>
+          <select id="kategoriya">
+            <option value="hammasi">Barcha yo'nalishlar</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="saralash">Saralash</label>
+          <select id="saralash">
+            <option value="standart">Standart tartib</option>
+            <option value="narx-osish">Narx: arzondan qimmatga</option>
+            <option value="narx-kamayish">Narx: qimmatdan arzonga</option>
+            <option value="nom">Nom: A dan Z gacha</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="kat-soni" aria-live="polite">Ko'rsatilmoqda: <b id="natija-soni">0</b> ta kurs</p>
+      <p class="kat-bosh" id="bosh-xabar" hidden>Hech narsa topilmadi</p>
+      <div class="kat-grid" id="katalog-konteyner"></div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img alt="Xorazm Bilim Markazi logotipi" src="rasmlar/logo.png" width="160" height="160">
+          <span class="title-md">Xorazm Bilim Markazi</span>
+        </div>
+        <p>Urganch shahrida xalqaro standartlar asosida sifatli ta'lim beruvchi zamonaviy intellektual maskan.</p>
+        <div class="verified label-md">
+          <span class="material-symbols-outlined i-20">verified</span>
+          <span>Davlat akkreditatsiyasidan o'tgan</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tezkor havolalar</h4>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Biz haqimizda (batafsil)</a></li>
+          <li><a href="index.html#courses">O'quv kurslari</a></li>
+          <li><a href="katalog.html">Kurslar katalogi</a></li>
+          <li><a href="index.html#prices">Narxlar va jadval</a></li>
+          <li><a href="index.html#terms">Ta'limiy lug'at</a></li>
+          <li><a href="aloqa.html">Aloqa va ariza</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Aloqa va manzil</h4>
+        <div class="footer-contact">
+          <p><span class="material-symbols-outlined i-20">location_on</span><span>O'zbekiston, Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi, 28-uy</span></p>
+          <p><span class="material-symbols-outlined i-20">call</span><span>+998 (62) 224-00-11 / 224-00-12</span></p>
+          <p><span class="material-symbols-outlined i-20">mail</span><span>qabul@xorazmbilim.uz</span></p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Qulaylik</h4>
+        <p>Sahifaning yuqori qismiga darhol o'tish uchun quyidagi tugmadan foydalaning.</p>
+        <a class="to-top" href="#top"><span class="material-symbols-outlined i-18">arrow_upward</span>Yuqoriga qaytish</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2025 Xorazm Bilim Markazi. Barcha huquqlar himoyalangan.</div>
+      <nav aria-label="Pastki menyu">
+        <ul>
+          <li><a href="batafsil.html">Markaz haqida</a></li>
+          <li><a href="index.html#prices">Narxlar</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a class="up-btn" href="#top" aria-label="Sahifa boshiga qaytish"><span class="material-symbols-outlined">arrow_upward</span></a>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/katalog.js"></script>
+</body>
+</html>

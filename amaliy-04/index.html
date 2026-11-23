@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xorazm Bilim Markazi — Urganchda zamonaviy ta'lim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="top">
+  <div class="topbar">
+    <div class="container topbar-inner caption">
+      <div class="topbar-left">
+        <span class="material-symbols-outlined i-16">campaign</span>
+        <span>Yangi o'quv mavsumi boshlanmoqda! 2025-yil qabuli ochiq.</span>
+      </div>
+      <div class="topbar-right">
+        <span><span class="material-symbols-outlined i-14">location_on</span>Urganch shahri, Al-Xorazmiy ko'chasi</span>
+        <span><span class="material-symbols-outlined i-14">call</span>+998 (62) 224-00-11</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container navbar">
+    <a class="brand" href="#home">
+      <img alt="Xorazm Bilim Markazi logotipi" src="rasmlar/logo.png" width="160" height="160">
+      <span class="brand-text">
+        <span class="brand-name">Xorazm Bilim Markazi</span>
+        <span class="brand-sub">Zamonaviy Ta'lim Markazi</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Asosiy menyu">
+      <ul>
+        <li><a class="active" aria-current="page" href="#home">Bosh sahifa</a></li>
+        <li><a href="batafsil.html">Batafsil</a></li>
+        <li><a href="#courses">Kurslar</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="#prices">Narxlar</a></li>
+        <li><a href="#admission">Qabul bosqichlari</a></li>
+        <li><a href="aloqa.html">Aloqa</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="fav-counter" title="Sevimli kurslar soni"><span class="material-symbols-outlined i-18">favorite</span><b id="fav-count">0</b></span>
+      <a class="btn btn-amber nav-cta" href="aloqa.html">Qabulga yozilish</a>
+      <div class="avatar"><span class="material-symbols-outlined i-18">person</span></div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobil menyu">
+    <ul>
+      <li><a href="#home">Bosh sahifa</a></li>
+      <li><a href="batafsil.html">Batafsil</a></li>
+      <li><a href="#courses">Kurslar</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+      <li><a href="#prices">Narxlar</a></li>
+      <li><a href="#admission">Qabul bosqichlari</a></li>
+      <li><a href="aloqa.html">Aloqa</a></li>
+      <li><a href="aloqa.html">Qabulga yozilish</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-row">
+        <div class="hero-text">
+          <div class="hero-badge label-md">
+            <span class="material-symbols-outlined i-18">verified</span>
+            <span>Xorazm Intellektual Ta'lim Maskani</span>
+          </div>
+          <h1 class="display-hero">Urganchda zamonaviy ta'lim va kelajak kasblari</h1>
+          <p class="body-lg hero-lead">
+            Dasturlash, xorijiy tillar va fundamental matematika bo'yicha amaliy bilimlar hamda xalqaro sertifikatlar markazi. Ta'limda innovatsiya va ishonchli natija.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-amber" href="#courses">
+              <span>Kurslarni tanlash</span>
+              <span class="material-symbols-outlined i-18">arrow_forward</span>
+            </a>
+            <a class="btn btn-soft" href="aloqa.html">
+              <span class="material-symbols-outlined i-18">chat</span>
+              <span>Biz bilan bog'lanish</span>
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>1,500+</strong><span>Bitiruvchilar</span></div>
+            <div class="stat"><strong>12+</strong><span>Tajribali mentorlar</span></div>
+            <div class="stat"><strong class="amber">95%</strong><span>Ishga joylashish</span></div>
+            <div class="stat"><strong>5+</strong><span>Asosiy yo'nalish</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img alt="Kompyuter oldida dars olayotgan o'quvchilar tasviri" src="rasmlar/hero.jpg" width="800" height="920">
+          <div class="hero-badges">
+            <div class="float-badge light label-lg">
+              <span class="ping"></span>
+              <span>98% muvaffaqiyat ko'rsatkichi</span>
+            </div>
+            <div class="float-badge dark label-md">
+              <span class="material-symbols-outlined i-18">school</span>
+              <span>Xalqaro sertifikatli ustozlar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HAQIDA ================= -->
+  <section class="section bg-low" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="pill label-md">Markaz haqida</span>
+        <h2 class="headline-lg">Urganch shahridagi yetakchi intellektual maskan</h2>
+        <p class="body-lg">Markazimiz Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasida joylashgan bo'lib, zamonaviy kompyuter sinflari, interaktiv multimedia vositalari va boy ilmiy-texnik kutubxona bazasiga ega.</p>
+      </div>
+
+      <div class="cards-row about-row">
+        <article class="card feature">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">groups</span></div>
+            <h3 class="title-md">Kichik guruhlar</h3>
+            <p>Har bir sinfda maksimal 10-12 nafar o'quvchi. Bu har bir talabaga individual yondashuv va dars mobaynida ustozning to'liq e'tiborini ta'minlaydi.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-16">check_circle</span><span>Shaxsiy mentorlik monitoringi</span></div>
+        </article>
+
+        <article class="card feature">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">laptop_mac</span></div>
+            <h3 class="title-md">Amaliy laboratoriya xonalari</h3>
+            <p>So'nggi rusumdagi kompyuterlar, 1 Gb/s tezlikdagi optik internet, ergonomik mebellar hamda real loyihalar ustida ishlash imkoniyati.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-16">check_circle</span><span>Kunduzgi kovorking va laboratoriya</span></div>
+        </article>
+
+        <article class="card feature">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">menu_book</span></div>
+            <h3 class="title-md">Multimedia &amp; kutubxona</h3>
+            <p>Dunyo yetakchi nashriyotlarining o'quv qo'llanmalari (Oxford, Cambridge), audio-vizual ta'lim resurslari va boy adabiyotlar fondi.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-16">check_circle</span><span>Raqamli test bazasi ochiq</span></div>
+        </article>
+      </div>
+
+      <div class="about-more">
+        <a class="btn btn-navy-lg" href="batafsil.html"><span>Markaz haqida batafsil</span><span class="material-symbols-outlined i-18">arrow_forward</span></a>
+      </div>
+
+      <div class="promo">
+        <div class="promo-inner">
+          <div class="promo-copy">
+            <div class="promo-tag label-md">
+              <span class="material-symbols-outlined i-16">local_fire_department</span>
+              <span>MAXSUS CHEGIRMA — 20%</span>
+            </div>
+            <h3 class="headline-md">Kuzgi qabul davom etmoqda!</h3>
+            <p class="body-lg">Yangi mavsum uchun ro'yxatdan o'tgan dastlabki 50 nafar o'quvchiga 20% chegirma va bepul o'quv qo'llanmalari taqdim etiladi. Joylar soni cheklangan!</p>
+          </div>
+          <a class="btn btn-amber" href="aloqa.html">
+            <span>Qabulga ariza topshirish</span>
+            <span class="material-symbols-outlined i-20">how_to_reg</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KURSLAR ================= -->
+  <section class="section bg-surface" id="courses">
+    <div class="container">
+      <div class="courses-head">
+        <div>
+          <span class="pill label-md">Ta'lim yo'nalishlari</span>
+          <h2 class="headline-lg">Kelajagingiz uchun talabgir kurslar</h2>
+        </div>
+        <a class="btn btn-chip label-md" href="#prices">
+          <span class="material-symbols-outlined i-18">table_chart</span>
+          <span>Narxlar va dars jadvaliga o'tish</span>
+        </a>
+      </div>
+
+      <div class="cards-row">
+        <article class="card course has-badge">
+          <span class="badge">Yangi</span>
+          <div>
+            <div class="course-top">
+              <span class="tag blue label-md">IT &amp; Dasturlash</span>
+              <span class="duration">6 oy</span>
+            </div>
+            <h3 class="title-md">Professional Dasturlash</h3>
+            <p>Amaliyotga asoslangan zamonaviy veb-ishlab chiqish kursi. Haqiqiy startap va portfolio loyihalarini yaratasiz.</p>
+            <ul class="checks">
+              <li><span class="material-symbols-outlined i-18">check</span><span>Frontend: HTML5, CSS3, JavaScript</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Backend asoslari: Python, Django, SQL</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Algoritmlar va Git bilan jamoaviy ishlash</span></li>
+            </ul>
+            <div class="meta-box">
+              <div class="meta-row"><span>Dars jadvali:</span><b>Haftada 3 kun / 2 soatdan</b></div>
+              <div class="meta-row"><span>Ustozlar:</span><b class="navy">Amaliyotchi dasturchilar</b></div>
+            </div>
+          </div>
+          <a class="btn btn-navy" href="#prices"><span>Narx va jadvalni ko'rish</span><span class="material-symbols-outlined i-16">arrow_forward</span></a>
+        </article>
+
+        <article class="card course has-badge">
+          <span class="badge">−20%</span>
+          <div>
+            <div class="course-top">
+              <span class="tag amber label-md">Til Ta'limi</span>
+              <span class="duration">4 - 8 oy</span>
+            </div>
+            <h3 class="title-md">Xorijiy Tillar Akademiyasi</h3>
+            <p>Xalqaro imtihonlarga tayyorlov va ravon gapirish ko'nikmalarini chuqur rivojlantiruvchi intensiv dastur.</p>
+            <ul class="checks">
+              <li><span class="material-symbols-outlined i-18">check</span><span>IELTS English: Band 7.0+ intensiv tayyorlov</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Rus tili: ravon so'zlashuv va amaliy grammatika</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Milliy CEFR imtihonlariga yo'naltirilgan tayyorgarlik</span></li>
+            </ul>
+            <div class="meta-box">
+              <div class="meta-row"><span>Qo'shimcha:</span><b>Speaking clublar bepul</b></div>
+              <div class="meta-row"><span>Ustozlar:</span><b class="navy">IELTS 8.0+ sertifikatli mutaxassislar</b></div>
+            </div>
+          </div>
+          <a class="btn btn-navy" href="#prices"><span>Narx va jadvalni ko'rish</span><span class="material-symbols-outlined i-16">arrow_forward</span></a>
+        </article>
+
+        <article class="card course">
+          <div>
+            <div class="course-top">
+              <span class="tag slate label-md">Aniq Fanlar</span>
+              <span class="duration">6 oy</span>
+            </div>
+            <h3 class="title-md">Fundamental Matematika</h3>
+            <p>Nufuzli xalqaro va milliy oliy ta'lim muassasalariga kirish sinovlariga kompleks akademik tayyorgarlik.</p>
+            <ul class="checks">
+              <li><span class="material-symbols-outlined i-18">check</span><span>Oliy o'quv yurtlariga (WIUT, Inha, Amity) kirish</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Mantiqiy masalalar va olimpiada savollari</span></li>
+              <li><span class="material-symbols-outlined i-18">check</span><span>Haftalik diagnostik test nazorati va tahlili</span></li>
+            </ul>
+            <div class="meta-box">
+              <div class="meta-row"><span>Nazorat:</span><b>Har haftalik mock imtihon</b></div>
+              <div class="meta-row"><span>Ustozlar:</span><b class="navy">Oliy toifali tajribali pedagoglar</b></div>
+            </div>
+          </div>
+          <a class="btn btn-navy" href="#prices"><span>Narx va jadvalni ko'rish</span><span class="material-symbols-outlined i-16">arrow_forward</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NARXLAR (JADVAL) ================= -->
+  <section class="section bg-low" id="prices">
+    <div class="container">
+      <div class="section-head">
+        <span class="pill label-md">Narxlar va jadval</span>
+        <h2 class="headline-lg">Kurslar narxi va dars jadvali</h2>
+        <p class="body-lg">To'lov har oy boshida amalga oshiriladi. Dars kunlari va vaqti guruh to'lishiga qarab aniqlashtirilishi mumkin.</p>
+      </div>
+
+      <div class="prices-row">
+        <div class="table-block">
+          <div class="table-wrap">
+            <table>
+              <caption>Kurslar narxi va dars jadvali (2025–2026 o'quv yili)</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Yo'nalish</th>
+                  <th scope="col">Kurs</th>
+                  <th scope="col">Davomiyligi</th>
+                  <th scope="col">Dars kunlari va vaqti</th>
+                  <th scope="col">Oylik to'lov</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="rowgroup" rowspan="2">IT va dasturlash</th>
+                  <td>Frontend (HTML, CSS, JavaScript)</td>
+                  <td>3 oy</td>
+                  <td>Du-Chor-Ju, 18:00–20:00</td>
+                  <td class="price">600 000 so'm</td>
+                </tr>
+                <tr>
+                  <td>Backend (Python, Django, SQL)</td>
+                  <td>3 oy</td>
+                  <td>Du-Chor-Ju, 16:00–18:00</td>
+                  <td class="price">700 000 so'm</td>
+                </tr>
+                <tr>
+                  <th scope="rowgroup" rowspan="2">Xorijiy tillar</th>
+                  <td>IELTS English</td>
+                  <td>6 oy</td>
+                  <td>Du-Chor-Ju, 14:00–16:00</td>
+                  <td class="price">550 000 so'm</td>
+                </tr>
+                <tr>
+                  <td>Rus tili (so'zlashuv)</td>
+                  <td>4 oy</td>
+                  <td>Se-Pay-Sha, 15:00–17:00</td>
+                  <td class="price">400 000 so'm</td>
+                </tr>
+                <tr>
+                  <th scope="rowgroup" rowspan="2">Aniq fanlar</th>
+                  <td>Matematika (abituriyentlar uchun)</td>
+                  <td>6 oy</td>
+                  <td>Se-Pay-Sha, 17:00–19:00</td>
+                  <td class="price">450 000 so'm</td>
+                </tr>
+                <tr>
+                  <td>Mantiq va olimpiada masalalari</td>
+                  <td>4 oy</td>
+                  <td>Shanba, 09:00–13:00</td>
+                  <td class="price">350 000 so'm</td>
+                </tr>
+                <tr>
+                  <td class="table-note" colspan="5">Kuzgi qabulda dastlabki 50 nafar o'quvchiga barcha kurslarda 20% chegirma beriladi.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="aside-note" aria-labelledby="docs-title">
+          <h3 class="title-md" id="docs-title">Qabul uchun hujjatlar</h3>
+          <p>Markazga kelganingizda o'zingiz bilan quyidagilarni olib keling:</p>
+          <ul>
+            <li><span class="material-symbols-outlined i-18">badge</span><span>Pasport yoki ID-karta nusxasi</span></li>
+            <li><span class="material-symbols-outlined i-18">photo_camera</span><span>3x4 o'lchamdagi 2 dona surat</span></li>
+            <li><span class="material-symbols-outlined i-18">family_restroom</span><span>18 yoshgacha bo'lganlar uchun ota-onadan ruxsat</span></li>
+          </ul>
+          <a class="btn btn-amber" href="aloqa.html"><span>Ariza qoldirish</span><span class="material-symbols-outlined i-18">arrow_forward</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QABUL BOSQICHLARI ================= -->
+  <section class="section bg-surface" id="admission">
+    <div class="container">
+      <div class="section-head center">
+        <span class="pill label-md">Qabul bosqichlari</span>
+        <h2 class="headline-lg">Markazimizga qabul 4 ta oddiy qadamda</h2>
+        <p class="body-lg">O'quv jarayoniga qo'shilish va kelajak kasbini egallash hech qachon bunchalik oson bo'lmagan.</p>
+      </div>
+
+      <div class="cards-row narrow">
+        <article class="card step">
+          <div>
+            <div class="step-num">01</div>
+            <h3 class="title-md">Onlayn ariza yoki tashrif</h3>
+            <p>Sayt orqali ariza qoldiring yoki Al-Xorazmiy ko'chasidagi markazimizga bevosita tashrif buyuring.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-18">touch_app</span><span>Tezkor ro'yxatdan o'tish</span></div>
+        </article>
+
+        <article class="card step">
+          <div>
+            <div class="step-num">02</div>
+            <h3 class="title-md">Diagnostik test</h3>
+            <p>Mutaxassislarimiz bilan bepul suhbat va testdan o'tib, mavjud boshlang'ich bilim darajangizni aniqlang.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-18">analytics</span><span>Darajani bepul aniqlash</span></div>
+        </article>
+
+        <article class="card step">
+          <div>
+            <div class="step-num">03</div>
+            <h3 class="title-md">O'quv jadvalini tanlash</h3>
+            <p>O'zingizga eng qulay vaqt (ertalabki, tushki yoki kechki smena) hamda maqsadga mos o'quv guruhini belgilang.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-18">calendar_month</span><span>Moslashuvchan grafik</span></div>
+        </article>
+
+        <article class="card step">
+          <div>
+            <div class="step-num amber">04</div>
+            <h3 class="title-md">Darslar va sertifikat</h3>
+            <p>Amaliy mashg'ulotlarga kirishing va kurs yakunida QR-kodli rasmiy sertifikatga ega bo'ling.</p>
+          </div>
+          <div class="check-line label-md"><span class="material-symbols-outlined i-18">workspace_premium</span><span>Rasmiy sertifikat va yordam</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LUG'AT ================= -->
+  <section class="section bg-low" id="terms">
+    <div class="container">
+      <div class="section-head">
+        <span class="pill label-md">Atamalar lug'ati</span>
+        <h2 class="headline-lg">Ta'lim jarayonidagi muhim tushunchalar</h2>
+        <p class="body-lg">O'quv tizimimiz va metodikamizni to'liqroq tushunishingiz uchun asosiy atamalar tavsifi.</p>
+      </div>
+
+      <dl class="terms">
+        <div class="card">
+          <dt><span class="material-symbols-outlined i-22">auto_stories</span><span>Kurs (Course)</span></dt>
+          <dd>Belgilangan o'quv dasturi bo'yicha to'liq nazariy va amaliy mashg'ulotlar to'plami bo'lib, talabani noldan professional bosqichgacha olib chiqadi. Har bir kurs amaliy topshiriqlar va oraliq nazoratlarni o'z ichiga oladi.</dd>
+        </div>
+        <div class="card">
+          <dt><span class="material-symbols-outlined i-22">view_module</span><span>Modul (Module)</span></dt>
+          <dd>Katta ta'lim kursining mustaqil tematik bo'limi (masalan, HTML/CSS moduli yoki IELTS Writing moduli). Har bir modul so'ngida nazorat imtihoni o'tkazilib, o'zlashtirish ko'rsatkichi hisoblab boriladi.</dd>
+        </div>
+        <div class="card">
+          <dt><span class="material-symbols-outlined i-22">verified_user</span><span>Sertifikat (Certificate)</span></dt>
+          <dd>Kursni va yakuniy loyihalarni muvaffaqiyatli topshirgan o'quvchilarga taqdim etiluvchi, kasbiy malakani tasdiqlovchi rasmiy hujjat. Har bir sertifikat onlayn tekshiruv bazasiga biriktirilgan.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= ALOQAGA CHAQIRUV ================= -->
+  <section class="section bg-surface" id="contact">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-text">
+          <h2 class="headline-lg">Savollaringiz bormi?</h2>
+          <p class="body-lg">Bepul konsultatsiyaga yoziling — mutaxassisimiz 15 daqiqa ichida bog'lanib, o'quv rejangizni birga tuzadi.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-amber" href="aloqa.html"><span>Ariza qoldirish</span><span class="material-symbols-outlined i-18">send</span></a>
+          <a class="btn btn-ghost-light" href="batafsil.html"><span>Markaz haqida batafsil</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img alt="Xorazm Bilim Markazi logotipi" src="rasmlar/logo.png" width="160" height="160">
+          <span class="title-md">Xorazm Bilim Markazi</span>
+        </div>
+        <p>Urganch shahrida xalqaro standartlar asosida sifatli ta'lim beruvchi zamonaviy intellektual maskan.</p>
+        <div class="verified label-md">
+          <span class="material-symbols-outlined i-20">verified</span>
+          <span>Davlat akkreditatsiyasidan o'tgan</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tezkor havolalar</h4>
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Biz haqimizda (batafsil)</a></li>
+          <li><a href="#courses">O'quv kurslari</a></li>
+          <li><a href="katalog.html">Kurslar katalogi</a></li>
+          <li><a href="#prices">Narxlar va jadval</a></li>
+          <li><a href="#terms">Ta'limiy lug'at</a></li>
+          <li><a href="aloqa.html">Aloqa va ariza</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Aloqa va manzil</h4>
+        <div class="footer-contact">
+          <p><span class="material-symbols-outlined i-20">location_on</span><span>O'zbekiston, Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi, 28-uy</span></p>
+          <p><span class="material-symbols-outlined i-20">call</span><span>+998 (62) 224-00-11 / 224-00-12</span></p>
+          <p><span class="material-symbols-outlined i-20">mail</span><span>qabul@xorazmbilim.uz</span></p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Qulaylik</h4>
+        <p>Sahifaning yuqori qismiga darhol o'tish uchun quyidagi tugmadan foydalaning.</p>
+        <a class="to-top" href="#top"><span class="material-symbols-outlined i-18">arrow_upward</span>Yuqoriga qaytish</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2025 Xorazm Bilim Markazi. Barcha huquqlar himoyalangan.</div>
+      <nav aria-label="Pastki menyu">
+        <ul>
+          <li><a href="batafsil.html">Markaz haqida</a></li>
+          <li><a href="#prices">Narxlar</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a class="up-btn" href="#top" aria-label="Sahifa boshiga qaytish"><span class="material-symbols-outlined">arrow_upward</span></a>
+
+<script src="js/ui.js"></script>
+</body>
+</html>
